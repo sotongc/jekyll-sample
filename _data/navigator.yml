@@ -1,0 +1,9 @@
+##
+# @ navigator list configuration in the header part
+#
+
+- title: Home
+  url: \
+
+- title: About
+  url: \about 

@@ -1,0 +1,9 @@
+<!-- lib -->
+{% for file in site.data.lib %}
+<script src="{{ file.src }}" type="text/javascript"></script>
+{% endfor %}
+
+<!-- main -->
+{% for file in site.data.main %}
+<script src="{{ file.src }}" type="text/javascript"></script>
+{% endfor %}

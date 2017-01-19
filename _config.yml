@@ -1,0 +1,22 @@
+# global settings
+
+source: ./
+destination: ./_site
+
+# compiler settings
+markdown: kramdown
+
+kramdown:
+  input: GFM
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+
+# serve settings
+
+LocalServerPort: 4000
+baseurl: "/"
+

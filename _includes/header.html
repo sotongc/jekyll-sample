@@ -1,0 +1,10 @@
+<header>
+	<nav class="inner">
+		<img src=""/>
+		<ul>
+			{% for item in site.data.navigator %}
+			<li><a href="{{ item.url }}">{{ item.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</nav>
+</header>

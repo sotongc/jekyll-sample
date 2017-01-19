@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/* clear default style */
+
+*{box-sizing:border-box;}
+
+h1,h2,h3,h4,h5,h6,
+p,
+ul,ol,li{
+	margin:0px;
+	padding:0px;	
+}
+
+a{text-decoration:none;color:inherit;}
+
+
