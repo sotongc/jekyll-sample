@@ -1,9 +1,17 @@
 <!-- lib -->
 {% for file in site.data.lib %}
-<script src="{{ file.src }}" type="text/javascript"></script>
+	{% if file.remote %}
+		<script src="{{ file.remote }}" type="text/javascript"></script>
+	{% elsif file.local%}
+		<script src="{{ file.local |prepend:dirname }}" type="text/javascript"></script>
+	{% endif %}
 {% endfor %}
 
 <!-- main -->
 {% for file in site.data.main %}
-<script src="{{ file.src }}" type="text/javascript"></script>
+	{% if file.remote %}
+		<script src="{{ file.remote }}" type="text/javascript"></script>
+	{% elsif file.local%}
+		<script src="{{ file.local |prepend:dirname }}" type="text/javascript"></script>
+	{% endif %}
 {% endfor %}

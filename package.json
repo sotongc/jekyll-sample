@@ -1,0 +1,29 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "jekyll serve",
+    "build": "jekyll build",
+    "minifycss": "gulp minify-css",
+    "uglify": "gulp uglify",
+    "compress": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sotongc/jekyll-sample.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sotongc/jekyll-sample/issues"
+  },
+  "homepage": "https://github.com/sotongc/jekyll-sample#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-uglify": "^2.0.0"
+  }
+}

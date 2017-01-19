@@ -1,8 +1,18 @@
+{% if site.mode == 'dev' %}
+	{% assign dirname= '../assets/' %}
+{% elsif site.mode == 'pro' %}
+	{% assign dirname= '../dist/' %}
+{% endif %}
+
 <head>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width;initial-scale=1.0;user-scalable=no"/>
 	<title>{{ page.title }}</title>
 	{% for link in site.data.links %}
-	<link rel="{{ link.rel }}" type="{{ link.type }}" href="{{ link.href }}"/>
+		{% if link.remote %}
+			<link rel="{{ link.rel }}" type="{{ link.type }}" href="{{ link.remote }}"/>
+		{% elsif link.local %}
+			<link rel="{{ link.rel }}" type="{{ link.type }}" href="{{ link.local |prepend:dirname }}"/>
+		{% endif %}
 	{% endfor %}
 </head>

@@ -20,3 +20,6 @@ exclude:
 LocalServerPort: 4000
 baseurl: "/"
 
+# global variables
+
+mode: pro ## dev == "development" | pro == "production"

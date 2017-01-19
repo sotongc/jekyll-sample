@@ -3,7 +3,9 @@
 #
 
 - name: jquery
-  src: ../assets/js/lib/jquery-3.1.1.min.js
+  local: js/lib/jquery-3.1.1.min.js
+  remote: 
 
 - name: art_template
-  src: ../assets/js/lib/template.js
+  local: js/lib/template.js
+  remote: 
